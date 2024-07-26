@@ -33,6 +33,20 @@ private slots:
 
     void on_PB_calcular_clicked();
 
+    void on_Btn_conver1_clicked();
+
+    void on_Btn_conver2_clicked();
+
+    void on_Btn_conver3_clicked();
+
+    void on_Btn_conver4_clicked();
+
+    void on_Btn_conver5_clicked();
+
+    void on_Btn_conver6_clicked();
+
+    void on_Regresar_conver_clicked();
+
 private:
     Ui::cframe *ui;
 };

@@ -66,8 +66,8 @@ void cframe::on_PB_calcular_clicked()
 
 
     int suma = 0;
-    bool control = false;
-    bool validez = false;
+    bool paso = false;
+    bool puerta = false;
 
     QString numero = ui->num_tarjeta->text();
     int tamaño = numero.length();
@@ -76,7 +76,7 @@ void cframe::on_PB_calcular_clicked()
     for (int i = tamaño - 1; i >= 0; --i) {
         int digito = numero[i].digitValue();
 
-        if (control) {
+        if (paso) {
             digito *= 2;
             if (digito > 9) {
                 digito = (digito / 10) + (digito % 10);
@@ -84,19 +84,59 @@ void cframe::on_PB_calcular_clicked()
         }
 
         suma += digito;
-        control = !control;
+        paso = !paso;
     }
 
 
     if (suma % 10 == 0) {
-        validez = true;
-        ui->txt_mostrar->setText("Su Tarjeta es Valida");
+        puerta = true;
+        ui->txt_mostrar->setText("La tarjeta es válida.");
     } else {
-        validez = false;
-        ui->txt_mostrar->setText("Su Tarjeta NO es Valida");
+        puerta = false;
+        ui->txt_mostrar->setText("La tarjeta es inválida.");
     }
         // ui->txt_mostrar->setText("La tarjeta es inválida.");
+}
 
 
+void cframe::on_Btn_conver1_clicked()
+{
+   ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Btn_conver2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Btn_conver3_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Btn_conver4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Btn_conver5_clicked()
+{
+   ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Btn_conver6_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void cframe::on_Regresar_conver_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
