@@ -17,13 +17,104 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>10</y>
       <width>741</width>
       <height>541</height>
      </rect>
     </property>
-    <widget class="QWidget" name="page"/>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QTextEdit" name="txt_Mostrar">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>100</y>
+        <width>501</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="SB_Fila">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>471</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ingrese un número de fila para hacer la pirámide.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLineEdit" name="num_tarjeta">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>281</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PB_calcular">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>130</y>
+        <width>101</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calcular</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="txt_mostrar">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>371</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="page_2"/>
    </widget>
    <widget class="QPushButton" name="pB_Ex3">
@@ -63,6 +154,19 @@
     </property>
     <property name="text">
      <string>Ejercicio 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pB_Close">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>530</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cerrar Programa</string>
     </property>
    </widget>
   </widget>
