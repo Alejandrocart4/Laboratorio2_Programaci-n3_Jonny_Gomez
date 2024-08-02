@@ -13,7 +13,6 @@ SOURCES += \
     cframe.cpp
 
 HEADERS += \
-    binarios.h \
     cframe.h
 
 FORMS += \
